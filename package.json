@@ -4,6 +4,12 @@
   "description": "A simple React source code highlight card component",
   "author": "tizee",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "component",
+    "highlight.js",
+    "UI"
+  ],
   "files": [
     "dist",
     "typings"

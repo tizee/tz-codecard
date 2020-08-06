@@ -10,8 +10,11 @@
 
 ```typescript
 import { CodeCard } from 'tz-codecard';
+import 'highlight.js/styles/darcula.css';
 
 const code = 'let a = 1;';
 
-const Demo = () => <CodeCard languages={['javascript']}>{code}</CodeCard>;
+export const Demo = () => (
+  <CodeCard languages={['javascript']}>{code}</CodeCard>
+);
 ```
