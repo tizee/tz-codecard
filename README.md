@@ -1,3 +1,3 @@
-# ts-simple-boilerplate
+## tz-codecard
 
-A simple TypeScript project bolierplate with only basic lint configuration.
+A simple React souce code highlight card component using `highlight.js`.
