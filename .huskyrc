@@ -1,6 +1,6 @@
 {
     "hooks":{
-        "pre-commit": "yarn test:coverage",
+        "pre-commit": "npm run test:coverage",
         "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
 }

@@ -1,0 +1,31 @@
+name: run tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '0 0 * * 0' # every sunday
+
+jobs:
+  run tests:
+    name: update file
+    runs-on: ubuntu-latest
+    env:
+      # current repo
+      TOKEN: ${{ secrets.CODECOV_TOKEN}}
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: install
+        run: npm install
+      - name: update repo
+        run: |-
+          npm run test:coverage
+          npx codecov --token=TOKEN
