@@ -4,6 +4,12 @@
   "description": "A simple React source code highlight card component",
   "author": "tizee",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tizee/tz-codecard"
+  },
+  "bugs": {
+    "url": "https://github.com/tizee/tz-codecard"
+  },
   "keywords": [
     "react",
     "component",
