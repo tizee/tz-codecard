@@ -1,4 +1,4 @@
-name: run tests
+name: build
 
 on:
   push:
@@ -28,4 +28,5 @@ jobs:
       - name: update repo
         run: |-
           npm run test:coverage
-          npx codecov --token=TOKEN
+          npm run build
+          npx codecov --token=$TOKEN
